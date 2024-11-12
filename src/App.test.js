@@ -11,7 +11,7 @@ describe('App component', () => {
         const logoElement = screen.getByAltText(/logo/i);
         expect(logoElement).toBeInTheDocument();
     });
-    test('has correct link attributessss', () => {
+    test('has correct link attributess', () => {
         render(<App />);
         const link = screen.getByText(/learn react/i);
         expect(link).toHaveAttribute('href', 'https://reactjs.org');
